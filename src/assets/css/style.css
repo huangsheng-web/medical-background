@@ -1,0 +1,204 @@
+/* 全局的字体图标 */
+@font-face {
+  font-family: "iconfont";
+  src: url('./../img/font/iconfont.eot');
+  /* IE9*/
+  src: url('./../img/font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./../img/font/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('./../img/font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('./../img/font/iconfont.svg#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.el-form div.w30 {
+  width: 33%;
+}
+.el-form div.w100 {
+  width: 99%;
+}
+/* 重置全局按钮样式 */
+.el-button--small{
+  font-size:14px;
+  border-radius:4px;
+  padding: 8px 15px;
+}
+.search.el-button--small{
+  padding: 8px 8px;
+}
+/* 重置全局表格样式 */
+.el-table{
+  min-height: 550px;
+}
+.el-table th,.el-table td{
+  height:50px;
+}
+.el-table th{
+  background:rgba(242,242,242,1);
+}
+.el-table .cell{
+  color:rgba(102,102,102,1);
+}
+.el-table th>.cell{
+  color:rgba(0,0,0,1);
+  font-weight: bold;
+}
+.table .el-table .el-table__empty-block{
+  height: 550px;
+}
+/* 重置tabs样式 */
+.disease-add .el-tabs__nav{
+  padding-left: 10px;
+}
+.disease-add .el-tabs__item{
+  height: 46px;
+  line-height: 46px;
+  color: #999999;
+  font-weight: bold;
+}
+.disease-add .el-tabs__item:hover{
+  color: #333333;
+}
+.disease-add .el-tabs__item.is-active{
+  color: #1890FF;
+}
+.disease-add .el-tabs__active-bar{
+  width: 80px !important;
+  background: #1890FF;
+}
+.disease-add .el-tabs__header{
+  margin-bottom: 0;
+}
+/* 重置编辑器样式 */
+.disease-add .ql-container{
+  min-height: 467px;
+  padding: 10px;
+}
+/* 重置全局分页样式 */
+.pagination-box{
+  padding-top: 30px;
+  text-align: right;
+}
+.pagination-box .el-pagination__total{
+  color:rgba(153,153,153,1);
+}
+.pagination-box .btn-prev,.pagination-box .btn-next,.pagination-box .el-pager>li{
+  width: 33px !important;
+  height: 33px !important;
+  background: #fff;
+  border: 1px solid rgba(232,232,232,1);
+  border-radius: 4px !important;
+}
+.pagination-box .btn-prev:hover,.pagination-box .btn-next:hover,.pagination-box .el-pager>li:hover{
+  background: #1890FF !important;
+  color: #fff !important;
+}
+.pagination-box .el-pagination .el-select .el-input .el-input__inner,.pagination-box .el-pagination__editor.el-input .el-input__inner{
+  height: 33px;
+}
+.pagination-box .el-pagination__jump{
+  margin-left: 0;
+}
+.pagination-box .el-pager li.active+li{
+  border-left: 1px solid #E8E8E8;
+}
+/* 重置全局弹出框样式 */
+.el-dialog{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 !important;
+  transform: translate(-50%, -50%);
+  /* max-height: calc(100% - 30px);
+  max-width: calc(100% - 30px); */
+  /* display: flex;
+  flex-direction: column; */
+  border-radius: 4px;
+}
+.el-dialog--center .el-dialog__body{
+  padding: 30px 20px;
+}
+/* 全局tabs样式 */
+.tabs{
+  display: flex;
+  margin: 20px 0 14px;
+  border-right: 1px solid #E8E8E8;
+  border-radius: 4px;
+  text-align: center;
+}
+.tabs > div{
+  width: 120px;
+  height: 32px;
+  position: relative;
+  color: #4A4A4A;
+  border: 1px solid #E8E8E8;
+  line-height: 32px;
+  cursor: pointer;
+}
+.tabs > div:nth-child(1){
+  border-radius: 4px 0 0 4px;
+}
+.tabs > div:last-child{
+  border-radius: 0 4px 4px 0;
+}
+.tabs > div.not-border{
+  border-right: none;
+}
+.tabs > div.active{
+  background: #1890FF;
+  border: 1px solid #1890FF !important;
+  color: #FFFFFF !important;
+}
+.tabs > div:hover{
+  border: 1px solid #1890FF !important;
+  color: #1890FF;
+}
+.tabs > div.active i{
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  margin-left: -8px;
+  border: 8px solid transparent;
+  border-top-color: #1890FF;
+}
+/* 全局表格操作字段样式 */
+.operate{
+  color: #1890FF;
+  cursor: pointer;
+}
+.blue{
+  color: #1890FF;
+}
+/* 无内容全局样式 */
+.not-content{
+  padding: 110px 0 165px 0;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(0,0,0,0.45);
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.not-content > img{
+  width: 218px;
+  height: 218px;
+}
+/* 全局表格内容过多溢出，气泡宽度样式 */
+.el-tooltip__popper{
+  max-width: 500px !important;
+  line-height: 20px !important;
+}
+.el-date-editor .el-range-separator {
+  padding: 0;
+}
